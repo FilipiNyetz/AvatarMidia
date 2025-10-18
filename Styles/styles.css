@@ -24,7 +24,6 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     background: radial-gradient(circle at 20% 20%, #011619, #000a0b 90%);
   }
   
-  /* 🔷 Logo */
   .logo-main {
     width: 600px;
     max-width: 80%;
@@ -86,19 +85,20 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     align-items: center;
   }
   
-  .cta-buttonAndImg button {
+  .button-cta {
     background-color: #00F3FF;
     border: none;
     border-radius: 8px;
-    padding: 30px 40px;
     color: #000;
     font-weight: 700;
     cursor: pointer;
     box-shadow: 0 0 20px rgba(0, 243, 255, 0.5);
     transition: transform 0.2s ease, box-shadow 0.3s ease;
+    width: 480px;
+    height: 90px;
   }
   
-  .cta-buttonAndImg button:hover {
+  .button-cta:hover {
     transform: scale(1.05);
     box-shadow: 0 0 30px rgba(0, 243, 255, 0.8);
   }
@@ -107,3 +107,137 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     width: 320px;
     height: auto;
   }
+
+  #second-screen {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at 20% 20%, #000f12, #000505 90%);
+  }
+
+  .hero-presentation{
+    width: 600px;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+ .content-presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+ }
+
+  .cards-content-presentation{
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    }   
+
+
+    #card-presentation-1{
+        background-color: #FCC404;
+    }
+    #card-presentation-2{
+        background-color: #00CDD8;
+    }
+
+
+
+  .card-content {
+  position: relative;
+  width: 280px;
+  height: 260px;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-front, .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card-back1 {
+  color: #000;
+  background-color: #FCC404;
+}
+
+.card-back2{
+    color: #000;
+    background-color: #00CDD8;
+}
+
+/* Inicialmente escondido */
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.95);
+}
+
+/* Quando o card está revelado */
+.reveal .card-front {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.95);
+}
+
+.reveal .card-back {
+  opacity: 1;
+  pointer-events: all;
+  transform: scale(1);
+}
+
+.reveal .card-back p{
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+  .card-content h3{
+    width: 300px;
+    color: #ffffff;
+  }
+  .img-lupa{
+    width: 70px;
+    height: auto;
+  }
+  .img-click{
+    width: 36px;
+    height: auto;
+    color: #ffffff;
+  }
+  .text-discover-card{
+    color: #000;
+    opacity: 0.8;
+    font-size: 18px;
+  }
+
+  .content-presentation h2{
+    width: 55%;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 24px;
+  }
+  
