@@ -13,7 +13,7 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
 #e6f4f1 
 
 */
-  #first-screen {
+#first-screen {
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -22,70 +22,75 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     align-items: center;
     text-align: center;
     background: radial-gradient(circle at 20% 20%, #011619, #000a0b 90%);
-  }
-  
-  .logo-main {
+}
+
+.logo-main {
     width: 600px;
     max-width: 80%;
     height: auto;
     margin-bottom: 40px;
-  }
-  
-  /* ✍️ Conteúdo principal */
-  .main-content-first-view {
+}
+
+/* ✍️ Conteúdo principal */
+.main-content-first-view {
     max-width: 1200px;
-  }
-  
-  .main-content-first-view h2 {
+}
+
+.main-content-first-view h2 {
     font-size: 36px;
     line-height: 1.4;
     color: #ffffff;
     font-weight: 800;
     text-transform: uppercase;
     text-align: left;
-  }
-  
-  .text-AVATARES3D {
+}
+
+.text-AVATARES3D {
     color: #FCC404;
-  }
-  
-  /* 📣 CTA principal */
-  .cta-first-view {
+}
+
+/* 📣 CTA principal */
+.cta-first-view {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 60px;
     gap: 40px;
-  }
-  
-  /* Texto lateral */
-  .cta-text {
+}
+
+/* Texto lateral */
+.cta-text {
     flex: 1;
     text-align: left;
     color: #dcdcdc;
     font-size: 18px;
     line-height: 1.5;
-  }
-  
-  .cta-text-span1{
+}
+
+.cta-text-span1 {
     color: #FCC404;
     font-weight: 600;
-  }
-  
-  .cta-text-span2{
+}
+
+.cta-text-span2 {
     color: #6AFEFE;
     font-weight: 600;
-  }
+}
 
-  /* 🔘 Botão + imagem */
-  .cta-buttonAndImg {
+.cta-text-span3 {
+    color: #FF2F2F;
+    font-weight: 700;
+}
+
+/* 🔘 Botão + imagem */
+.cta-buttonAndImg {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .button-cta {
+}
+
+.button-cta {
     background-color: #00F3FF;
     border: none;
     border-radius: 8px;
@@ -96,19 +101,19 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     transition: transform 0.2s ease, box-shadow 0.3s ease;
     width: 480px;
     height: 90px;
-  }
-  
-  .button-cta:hover {
+}
+
+.button-cta:hover {
     transform: scale(1.05);
     box-shadow: 0 0 30px rgba(0, 243, 255, 0.8);
-  }
-  
-  .cta-img {
+}
+
+.cta-img {
     width: 320px;
     height: auto;
-  }
+}
 
-  #second-screen {
+#second-screen {
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -117,127 +122,200 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     align-items: center;
     text-align: center;
     background: radial-gradient(circle at 20% 20%, #000f12, #000505 90%);
-  }
+}
 
-  .hero-presentation{
+.hero-presentation {
     width: 600px;
     max-width: 80%;
     height: auto;
     margin-bottom: 40px;
-  }
+}
 
- .content-presentation{
+.content-presentation {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 500px;
- }
+    padding-bottom: 10px;
+}
 
-  .cards-content-presentation{
+.cards-content-presentation {
     display: flex;
     justify-content: center;
     gap: 22px;
-    }   
-
-
-    #card-presentation-1{
-        background-color: #FCC404;
-    }
-    #card-presentation-2{
-        background-color: #00CDD8;
-    }
-
-
-
-  .card-content {
-  position: relative;
-  width: 280px;
-  height: 260px;
-  border-radius: 10px;
-  padding: 20px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.25s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.card-front, .card-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+
+#card-presentation-1 {
+    background-color: #FCC404;
+}
+
+#card-presentation-2 {
+    background-color: #00CDD8;
+}
+
+
+
+.card-content {
+    position: relative;
+    width: 280px;
+    height: 260px;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .card-back1 {
-  color: #000;
-  background-color: #FCC404;
+    color: #000;
+    background-color: #FCC404;
 }
 
-.card-back2{
+.card-back2 {
     color: #000;
     background-color: #00CDD8;
 }
 
 /* Inicialmente escondido */
 .hidden {
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0.95);
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
 }
 
 /* Quando o card está revelado */
 .reveal .card-front {
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0.95);
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
 }
 
 .reveal .card-back {
-  opacity: 1;
-  pointer-events: all;
-  transform: scale(1);
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
 }
 
-.reveal .card-back p{
+.reveal .card-back p {
     line-height: 1.2;
     font-size: 20px;
 }
 
-  .card-content h3{
+.card-content h3 {
     width: 300px;
     color: #ffffff;
-  }
-  .img-lupa{
+}
+
+.img-lupa {
     width: 70px;
     height: auto;
-  }
-  .img-click{
+}
+
+.img-click {
     width: 36px;
     height: auto;
     color: #ffffff;
-  }
-  .text-discover-card{
+}
+
+.text-discover-card {
     color: #000;
     opacity: 0.8;
     font-size: 18px;
-  }
+}
 
-  .content-presentation h2{
+.content-presentation h2 {
     width: 55%;
     color: #ffffff;
     font-weight: 300;
     font-size: 24px;
+}
+
+#third-screen {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(to bottom, #00353A 10%,#000D0D 80%,#000D0D 90%);
+    color: #ffffff;
+    overflow: hidden;
+    padding-bottom: 60px;
+  }
+  .third-section-header {
+    width: 100%;
+    background-image: url(/Assets/img/background/BackgroundEmojis.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 15% 20px 25%;
+    text-align: left;
+  }
+
+  .third-section-header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.3;
+    width: 80%;
+  }
+  .third-section-header p {
+    width: 70%;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
   }
   
+  
+  .third-section-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 28px;
+    padding: 40px 20px;
+  }
+  .third-section-main-text {
+    font-size: 24px;
+    font-weight: 700;
+    width: 700px;
+    max-width: 90%;
+    line-height: 1.4;
+  }
+
+.img-avatares {
+    width: 900px;
+    max-width: 95%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 10px;
+  }
+  .third-section-main-content h3 {
+    width: 650px;
+    max-width: 90%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
