@@ -13,3 +13,97 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
 #e6f4f1 
 
 */
+  #first-screen {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at 20% 20%, #011619, #000a0b 90%);
+  }
+  
+  /* 🔷 Logo */
+  .logo-main {
+    width: 600px;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  
+  /* ✍️ Conteúdo principal */
+  .main-content-first-view {
+    max-width: 1200px;
+  }
+  
+  .main-content-first-view h2 {
+    font-size: 36px;
+    line-height: 1.4;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  
+  .text-AVATARES3D {
+    color: #FCC404;
+  }
+  
+  /* 📣 CTA principal */
+  .cta-first-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+    gap: 40px;
+  }
+  
+  /* Texto lateral */
+  .cta-text {
+    flex: 1;
+    text-align: left;
+    color: #dcdcdc;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .cta-text-span1{
+    color: #FCC404;
+    font-weight: 600;
+  }
+  
+  .cta-text-span2{
+    color: #6AFEFE;
+    font-weight: 600;
+  }
+
+  /* 🔘 Botão + imagem */
+  .cta-buttonAndImg {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-buttonAndImg button {
+    background-color: #00F3FF;
+    border: none;
+    border-radius: 8px;
+    padding: 30px 40px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .cta-buttonAndImg button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 243, 255, 0.8);
+  }
+  
+  .cta-img {
+    width: 320px;
+    height: auto;
+  }
