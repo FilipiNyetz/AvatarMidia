@@ -649,5 +649,150 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
   }
   
   
+  /* ===== BONUS SCREEN ===== */
+#bonus-screen {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(180deg, #00353A 0%, #000D0D 100%);
+    text-align: center;
+    padding: 20px 0;
+    gap: 56px;
+  }
   
+  /* ===== TITLES ===== */
+  .title-bonus-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .title-bonus-screen h1 {
+    font-size: 48px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #FFC500 0%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+  }
+  
+  .title-bonus-screen h3 {
+    width: 100%;
+    max-width: 560px;
+    color: #EDEDED;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .cta-text-span1 {
+    color: #FFC500;
+    font-weight: bold;
+  }
+  
+  /* ===== CARDS ===== */
+  .cards-describe-bonus {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  
+  .card-bonus {
+    width: 330px;
+    height: 580px;
+    border-radius: 16px;
+    background: linear-gradient(#002021, #002021) padding-box,
+                linear-gradient(145deg, #FFD900, #00F3FF) border-box;
+    border: 2px solid transparent;
+    color: #FFFFFF;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-bonus:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(0, 243, 255, 0.2);
+  }
+  
+  .content-describe-bonus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .title-card-bonus {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .content-describe-bonus img {
+    width: 120px;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  .content-describe-bonus p {
+    font-size: 14px;
+    color: #CFCFCF;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 0 6px;
+  }
+  
+  .price-bonus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .price-bonus h3 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  .span-price-bonus {
+    color: #FFC500;
+    text-decoration: line-through;
+  }
+  
+  .price-bonus h1 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  
+  /* ===== CTA FINAL ===== */
+  .cta-bonus-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    max-width: 700px;
+  }
+  
+  .cta-text-span5-gradient {
+    font-weight: 700;
+    background: linear-gradient(90deg, #00F3FF, #FFD900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
   
