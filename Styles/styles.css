@@ -424,3 +424,230 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     font-size: 18px;
     line-height: 1.6;
 }
+
+#price-screen {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to bottom, #00353A 10%, #000D0D 80%);
+    color: #ffffff;
+    padding: 80px 20px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  /* ===== Título principal ===== */
+  .title-price-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 60px;
+  }
+  
+  .title-price-screen h1 {
+    color: #FFC300;
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  
+  .title-price-screen p {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 520px;
+    color: #e5e5e5;
+    line-height: 1.4;
+  }
+  
+  .title-price-screen b {
+    color: #fff;
+  }
+  
+  /* ===== Container principal ===== */
+  .main-content-price-screen {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* ===== Card Laranja ===== */
+  .card-banner-price {
+    background: linear-gradient(180deg, #ffb300 0%, #ff9100 100%);
+    width: 340px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    padding: 30px 20px 40px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* ===== Cabeçalho do card ===== */
+  .header-card-banner-price h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #00e0e7;
+  }
+  
+  .stars {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .stars img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .header-card-banner-price h3 {
+    margin: 6px 0;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .span-price {
+    text-decoration: line-through;
+    color: #5a1d00;
+  }
+  
+  .span-price2 {
+    color: #b2ff00;
+    font-weight: 700;
+  }
+  
+  .price-show {
+    font-size: 2.6rem !important;
+    color: #fff;
+    font-weight: 800;
+    margin: 10px 0;
+  }
+  
+  /* ===== Lista de informações ===== */
+  .informations-course {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  .information-course {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #ffffff;
+  }
+  
+  .information-course img {
+    width: 22px;
+    height: auto;
+  }
+  
+  .special-information {
+    color: #00aab8;
+    font-weight: 600;
+  }
+  
+  /* ===== Botão Comprar ===== */
+  .button-buy {
+    align-self: center;
+    margin-top: 30px;
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+    border: 2px solid #ff9100;
+    border-radius: 10px;
+    padding: 12px 50px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .button-buy:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 145, 0, 0.7);
+  }
+  
+  .promo-content {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    height: 515px;
+    text-align: left;
+    justify-content: space-between;
+  }
+  
+  .promo-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .emphasis-text h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.1;
+  }
+  
+  .emphasis-text h4 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #FF7700;
+    margin-top: 5px;
+  }
+  
+  .promo-content p {
+    color: #dcdcdc;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .safe-details-course {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .detail-security {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .detail-security img {
+    width: 30px;
+    height: auto;
+  }
+  
+  .detail-security h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ccc;
+    line-height: 1.2;
+  }
+  
+  .detail-security-bold {
+    font-weight: 800;
+    color: #fff;
+  }
+  
+  
+  
+  
