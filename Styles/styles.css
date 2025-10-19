@@ -857,7 +857,6 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     line-height: 1.6;
   }
   
-  /* GRID DOS CARDS */
   .cards-modulos {
     display: flex;
     flex-wrap: wrap;
@@ -877,8 +876,8 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
                 linear-gradient(135deg, #fcc404, #00f3ff) border-box;
     border: 2px solid transparent;
     border-radius: 14px;
-    padding: 0; /* Removemos padding para a imagem encostar nas bordas */
-    overflow: hidden; /* Evita que a imagem ultrapasse o raio */
+    padding: 0;
+    overflow: hidden; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -887,19 +886,18 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     box-shadow: 0px 6px 18px rgba(0, 243, 255, 0.25);
   }
   
-  /* A imagem agora ocupa toda a largura do card */
   .card-modulo img {
     width: 100%;
     height: auto;
     display: block;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
-    margin: 0; /* remove margens */
+    margin: 0; 
   }
   
-  /* Conteúdo interno (texto e lista) */
+
   .card-content {
-    padding: 20px; /* padding interno só no conteúdo */
+    padding: 20px; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -921,9 +919,7 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     color: #dcdcdc;
   }
   
-  
-  
-  /* CTA FINAL */
+
   .cta-modulos-screnn {
     margin-top: 40px;
     display: flex;
@@ -939,3 +935,133 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     font-size: 15px;
     line-height: 1.7;
   }
+
+  #seventh-screen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    overflow: hidden;
+  }
+  
+  /* ------------------- TOPO ------------------- */
+  .top-content-certfication-screen {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 35px 8%;
+    background-color: #00b4bd;
+    color: #000;
+  }
+  
+  .text-content-top-content-certification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+
+  }
+  
+  .text-content-top-content-certification h1 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .text-content-top-content-certification p {
+    max-width: 520px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .image-certifcation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-certifcation img {
+    width: 340px;
+    height: auto;
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.2));
+  }
+  
+  /* ------------------- PARTE DE BAIXO ------------------- */
+  .bottom-content-certfication-screen {
+    width: 100%;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .main-content-certification-screnn {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0%;
+  }
+  
+  .selo-7-dias {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+
+  }
+  
+  .selo-7-dias img {
+    width: 400px;
+    height: auto;
+  }
+  
+  .text-content-bottom-content-certification {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .text-content-bottom-content-certification h1 {
+    font-size: 34px;
+    font-weight: 800;
+    text-align: left;
+    color: #000;
+  }
+  
+  .text-content-bottom-content-certification p {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    color: #333;
+  }
+  
+  /* ------------------- RODAPÉ ------------------- */
+  .footer-section-certification {
+    width: 100%;
+    background-color: #fcc404;
+    color: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-section-certification h1 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  
