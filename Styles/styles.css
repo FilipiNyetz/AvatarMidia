@@ -657,11 +657,22 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background: linear-gradient(180deg, #00353A 0%, #000D0D 100%);
+    gap: 56px;
+    background: radial-gradient(
+        circle at 50% 10%, 
+        rgba(0, 243, 255, 0.15) 0%, 
+        transparent 60%
+      ),
+      linear-gradient(
+        135deg, 
+        #002B2F 0%, 
+        #001414 100%
+      );
     text-align: center;
     padding: 20px 0;
     gap: 56px;
   }
+
   
   /* ===== TITLES ===== */
   .title-bonus-screen {
@@ -722,6 +733,8 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
   .card-bonus:hover {
     transform: translateY(-8px);
     box-shadow: 0px 8px 20px rgba(0, 243, 255, 0.2);
+    background: linear-gradient(#002021, #002021) padding-box,
+                linear-gradient(135deg, #00F3FF,#FCC404) border-box;
   }
   
   .content-describe-bonus {
@@ -794,5 +807,135 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     -webkit-text-fill-color: transparent;
   }
   
-
+  #sixth-screen {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #141414;
+    color: #ffffff;
+    padding: 10px 0px;
+    text-align: center;
+  }
   
+  /* Cabeçalho */
+  .header-modulos-screen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .header-modulos-screen h1 {
+    font-size: 28px;
+    font-weight: 800;
+  }
+  
+  .banner {
+    width: 100%;
+    height: 40px;
+    background-color: #00f3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border-radius: 4px;
+  }
+  
+  .banner p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .text-header-modulos-screen {
+    max-width: 780px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* GRID DOS CARDS */
+  .cards-modulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+    max-width: 1300px;
+  }
+  
+  .card-modulo {
+    flex: 1 1 calc(25% - 28px);
+    max-width: 280px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#002021, #002021) padding-box,
+                linear-gradient(135deg, #fcc404, #00f3ff) border-box;
+    border: 2px solid transparent;
+    border-radius: 14px;
+    padding: 0; /* Removemos padding para a imagem encostar nas bordas */
+    overflow: hidden; /* Evita que a imagem ultrapasse o raio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-modulo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 6px 18px rgba(0, 243, 255, 0.25);
+  }
+  
+  /* A imagem agora ocupa toda a largura do card */
+  .card-modulo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    margin: 0; /* remove margens */
+  }
+  
+  /* Conteúdo interno (texto e lista) */
+  .card-content {
+    padding: 20px; /* padding interno só no conteúdo */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .card-modulo h1 { 
+    font-size: 18px; 
+    font-weight: 700; 
+    margin-bottom: 10px; 
+    color: #ffffff; 
+}
+  
+.card-modulo ul {
+    width: 100%;
+    padding-left: 20px;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #dcdcdc;
+  }
+  
+  
+  
+  /* CTA FINAL */
+  .cta-modulos-screnn {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  
+  .cta-modulos-screnn p {
+    max-width: 850px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
