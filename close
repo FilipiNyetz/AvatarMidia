@@ -1,0 +1,65 @@
+[33mcommit ada59fc52d4406787e25a71c490c465495eaf84b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelop[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/develop[m[33m)[m
+Author: FilipiNyetz <romao.martins.filipi@gmail.com>
+Date:   Mon Oct 20 12:50:18 2025 -0300
+
+    created feedback view andfaq view, implemented navigation links, added swiper.js
+
+[33mcommit dfc718e66e44cf5ded01af9e940f6bfb05c17392[m
+Author: FilipiNyetz <romao.martins.filipi@gmail.com>
+Date:   Sun Oct 19 18:04:39 2025 -0300
+
+    added certifate screen
+
+[33mcommit 41ee25f2a2e2658e206bc85857a65549f18b08a5[m
+Author: FilipiNyetz <romao.martins.filipi@gmail.com>
+Date:   Sun Oct 19 16:04:11 2025 -0300
+
+    added modulos screen
+
+[33mcommit d909b6bbc3ed808e088a88a996f477567c69b355[m
+Author: FilipiNyetz <romao.martins.filipi@gmail.com>
+Date:   Sun Oct 19 14:57:51 2025 -0300
+
+    added bonus section, and added images ebooks
+
+[33mcommit 3e3818c5ea322d2178b737c1a874c5366d7127d1[m
+Author: FilipiNyetz <romao.martins.filipi@gmail.com>
+Date:   Sat Oct 18 22:13:18 2025 -0300
+
+    added price screen
+
+[33mcommit 127388b69b213949702bca5c1f5ef22b2e49af4b[m
+Author: FilipiNyetz <romao.martins.filipi@gmail.com>
+Date:   Sat Oct 18 20:06:52 2025 -0300
+
+    created fourth section
+
+[33mcommit eda06f87c20b7486584ffa92cc3a3c783d576634[m
+Author: FilipiNyetz <romao.martins.filipi@gmail.com>
+Date:   Sat Oct 18 18:39:18 2025 -0300
+
+    created third-section
+
+[33mcommit 497654d3c18c79d6ac9f1edd82021489d40d2869[m
+Author: FilipiNyetz <romao.martins.filipi@gmail.com>
+Date:   Sat Oct 18 17:36:12 2025 -0300
+
+    created second section and added main.js
+
+[33mcommit fdbcc05b236c25e41c313e175fdf87e18336f565[m
+Author: FilipiNyetz <romao.martins.filipi@gmail.com>
+Date:   Sat Oct 18 15:52:16 2025 -0300
+
+    created firts section, and added reset style css
+
+[33mcommit 42744b368eed0a5c7ec1177fa56149397864f5a7[m
+Author: FilipiNyetz <romao.martins.filipi@gmail.com>
+Date:   Sat Oct 18 14:54:48 2025 -0300
+
+    firts commit develop
+
+[33mcommit ca62bdc5bffe600c1f92c9128f59509025c59d05[m[33m ([m[1;32mmain[m[33m)[m
+Author: FilipiNyetz <romao.martins.filipi@gmail.com>
+Date:   Sat Oct 18 14:52:54 2025 -0300
+
+    firts commit

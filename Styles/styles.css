@@ -14,30 +14,57 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
 
 */
 #first-screen {
+    position: relative;
     min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    background: radial-gradient(circle at 20% 20%, #011619, #000a0b 90%);
+    background-color: #000;
+    border-radius: 0 0 200px 200px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+main {
+  background-color: #141414;
 }
 
 .logo-main {
-    width: 600px;
-    max-width: 80%;
-    height: auto;
-    margin-bottom: 40px;
+  width: 600px;
+  max-width: 80%;
+  height: auto;
+  margin-block: 5rem;
 }
 
 /* ✍️ Conteúdo principal */
 .main-content-first-view {
-    max-width: 1200px;
+  max-width: 1200px;
 }
 
-.main-content-first-view h2 {
-    font-size: 36px;
+.main-content-first-view > .backlight {
+   position: absolute;
+   background-color: #58E0E7;
+   border-radius: 100%;
+   filter: blur(250px);
+   z-index: -1;
+}
+.main-content-first-view > .backlight:nth-child(1) {
+  width: 25%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: rotateZ(-15deg);
+}
+.main-content-first-view > .backlight:nth-child(2) {
+  width: 20%;
+  height: 100%;
+  bottom:2;
+  right: 0;
+}
+
+.main-content-first-view h1 {
     line-height: 1.4;
     color: #ffffff;
     font-weight: 800;
@@ -54,8 +81,8 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 60px;
-    gap: 40px;
+    margin-top: 5rem;
+    gap: 2rem;
 }
 
 /* Texto lateral */
@@ -63,7 +90,7 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     flex: 1;
     text-align: left;
     color: #dcdcdc;
-    font-size: 18px;
+    font-size: 1.2rem;
     line-height: 1.5;
 }
 
@@ -91,26 +118,32 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
 }
 
 .button-cta {
+    width:100%;
+    height: 100%;
+    padding: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
     background-color: #00F3FF;
+    color: rgba(0, 0, 0, 0.80);
     border: none;
     border-radius: 8px;
-    color: #000;
-    font-weight: 700;
-    cursor: pointer;
-    box-shadow: 0 0 20px rgba(0, 243, 255, 0.5);
+    box-shadow: 5px 5px 0px #2D6669;
     transition: transform 0.2s ease, box-shadow 0.3s ease;
-    width: 480px;
-    height: 90px;
+    cursor: pointer;
 }
 
 .button-cta:hover {
+    color: #ffffff;
+    background-color: #FCC404;
+    box-shadow: 5px 5px 50px #655007;
     transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(0, 243, 255, 0.8);
 }
 
 .cta-img {
-    width: 320px;
-    height: auto;
+    position: relative;
+    width: auto;
+    height: fit-content;
 }
 
 #second-screen {
@@ -121,41 +154,63 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: radial-gradient(circle at 20% 20%, #000f12, #000505 90%);
+    background: #141414;
+    border-bottom: 10px solid #00BECE;
+}
+
+.container-hero-presentation {
+  position: relative;
+  width: fit-content;
+  max-width: 1200px;
+  z-index: 1;
 }
 
 .hero-presentation {
-    width: 600px;
-    max-width: 80%;
-    height: auto;
-    margin-bottom: 40px;
+  width: 65%;
+  max-width: 1200px;
+  height: auto;
+  margin-block: 6rem;
+}
+
+.container-hero-presentation > .backlight {
+  position: absolute;
+  background-color: #80F9FF;
+  width: 30%;
+  height: 30%;
+  top: 20%;
+  left: 30%;
+  border-radius: 100%;
+  filter: blur(170px);
+  z-index: -1;
 }
 
 .content-presentation {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 500px;
-    padding-bottom: 10px;
+    padding-bottom: 5rem;
+    gap: 3rem;
 }
 
 .cards-content-presentation {
     display: flex;
-    justify-content: center;
-    gap: 22px;
+    justify-content: space-between;
+    gap: 3rem;
 }
 
 
 #card-presentation-1 {
-    background-color: #FCC404;
+    background-color: #FFCB17;
+    box-shadow: 10px 10px 0 #FFE794;
 }
 
 #card-presentation-2 {
     background-color: #00CDD8;
+    box-shadow: 10px 10px 0 #A4EBEF;
 }
-
-
 
 .card-content {
     position: relative;
@@ -184,17 +239,23 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
     text-align: center;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+.card-front > h3 {
+  font-weight: 900;
+  padding-inline: 1.5rem;
+}
+
 .card-back1 {
-    color: #000;
-    background-color: #FCC404;
+    color: #4D3C00;
+    background-color: #FFCB17;
 }
 
 .card-back2 {
-    color: #000;
+    color: #002E32;
     background-color: #00CDD8;
 }
 
@@ -220,7 +281,7 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
 
 .reveal .card-back p {
     line-height: 1.2;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .card-content h3 {
@@ -240,16 +301,15 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
 }
 
 .text-discover-card {
-    color: #000;
+    color: rgba(0, 0, 0, 0.50)!important;
     opacity: 0.8;
     font-size: 18px;
 }
 
-.content-presentation h2 {
+.content-presentation > h3 {
     width: 55%;
     color: #ffffff;
     font-weight: 300;
-    font-size: 24px;
 }
 
 #third-screen {
@@ -262,89 +322,80 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     background: linear-gradient(to bottom, #00353A 10%,#000D0D 80%,#000D0D 90%);
     color: #ffffff;
     overflow: hidden;
-    padding-bottom: 60px;
+    border-bottom: 10px solid #00BECE;
   }
+
   .third-section-header {
     width: 100%;
     background-image: url(/Assets/img/background/BackgroundEmojis.png);
+    background-position: bottom;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
-    padding: 20px 15% 20px 25%;
+    gap: 1.4rem;
+    padding: 5rem 15% 3rem 25%;
     text-align: left;
   }
 
-  .third-section-header h1 {
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 1.3;
-    width: 80%;
-  }
   .third-section-header p {
-    width: 70%;
-    font-size: 16px;
-    line-height: 1.6;
+    width: 60%;
     font-weight: 300;
   }
-  
   
   .third-section-main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 28px;
-    padding: 40px 20px;
+    gap: 2rem;
+    padding: 5rem 0;
   }
+  
   .third-section-main-text {
-    font-size: 24px;
-    font-weight: 700;
-    width: 700px;
+    width: 70%;
     max-width: 90%;
-    line-height: 1.4;
   }
 
 .img-avatares {
     width: 900px;
     max-width: 95%;
     height: auto;
-    border-radius: 12px;
-    margin-top: 10px;
+    margin-top: .5rem;
   }
+
   .third-section-main-content h3 {
     width: 650px;
     max-width: 90%;
-    font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
   }
 
   #fourth-screen {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to bottom, #00353A, #000D0D 90%);
+    background: linear-gradient(to bottom, #002E32, #141414);
     text-align: center;
-    padding: 50px 0;
+    padding: 5rem 0;
+    z-index: 2;
+    border-bottom: 10px solid #00BECE;
 }
 
 .title-content-fourth-screen {
     background-color: transparent;
-    border: 2px solid #FCC404;
+    border: 5px solid #FCC404;
     border-radius: 40px;
-    padding: 12px 40px;
-    margin-bottom: 60px;
+    padding: 1rem 2rem;
+    margin-bottom: 5rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
-.title-content-fourth-screen h1 {
-    font-size: 20px;
-    font-weight: 700;
+.title-content-fourth-screen h3 {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -354,10 +405,10 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 28px;
+    gap: 1.5rem;
     width: 100%;
-    max-width: 1100px;
-    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-bottom: 2.5rem;
 }
 
 .card-possibility {
@@ -374,6 +425,7 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     align-items: center;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 2;
 }
 
 .card-possibility:hover {
@@ -384,17 +436,15 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
 }
 
 .card-possibility-title {
-    font-weight: 700;
-    font-size: 16px;
     text-align: center;
     line-height: 1.3;
 }
 
 .card-possibility-text {
-    font-size: 14px;
     width: 90%;
     color: #d4d4d4;
     text-align: center;
+    line-height: 1.2;
 }
 
 .card-possibility-image {
@@ -414,15 +464,30 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     width: 550px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2rem;
     text-align: left;
 }
 
 .cta-text-fourth-view {
     color: #ffffff;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 1.6;
+}
+
+.right-block-cta-fourth-view {
+  position: relative;
+  z-index: 1;
+}
+
+.right-block-cta-fourth-view > .backlight{
+   position: absolute;
+   background-color: #00F3FF;
+   border-radius: 100%;
+   filter: blur(160px);
+   z-index: -1;
+   width: 100%;
+   height: 50%;
+   bottom: 30%;
+   left: 10%;
 }
 
 #price-screen {
@@ -432,7 +497,7 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background: linear-gradient(to bottom, #00353A 10%, #000D0D 80%);
+    background: linear-gradient(to bottom, #141414, #043C41);
     color: #ffffff;
     padding: 80px 20px;
     overflow: hidden;
@@ -451,14 +516,12 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
   
   .title-price-screen h1 {
     color: #FFC300;
-    font-size: 2.2rem;
     font-weight: 800;
     letter-spacing: 1px;
   }
   
   .title-price-screen p {
     font-weight: 400;
-    font-size: 1rem;
     max-width: 520px;
     color: #e5e5e5;
     line-height: 1.4;
@@ -481,30 +544,52 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
   
   /* ===== Card Laranja ===== */
   .card-banner-price {
-    background: linear-gradient(180deg, #ffb300 0%, #ff9100 100%);
-    width: 340px;
+    width: 360px;
     border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 20px #07666E;
     overflow: hidden;
-    padding: 30px 20px 40px;
+    padding: 0px 0px 40px;
     color: #ffffff;
+    background-color: #DAFFFB;
     text-align: center;
     position: relative;
   }
   
   /* ===== Cabeçalho do card ===== */
+  .header-card-banner-price {
+    /* Suas propriedades originais */
+    background: linear-gradient(75deg, #FFC300 0%, #ff5e00 80%);
+    width: 100%;
+
+    /* ADICIONE ISSO:
+    Define a proporção da forma (altura/largura).
+    A forma original tinha 200px de largura e 240px de altura.
+    Isso é ESSENCIAL para a forma não ficar achatada ou esticada.
+    */
+    aspect-ratio: 200 / 240;  /* ou 5 / 6 */
+    
+    /* ADICIONE ISSO:
+    Aplica o clip-path responsivo que definimos no SVG.
+    */
+    -webkit-clip-path: url(#responsiveBannerShape);
+    clip-path: url(#responsiveBannerShape);
+  }
+
   .header-card-banner-price h1 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #00e0e7;
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding-block: 1.5rem .5rem;
+    background-image: linear-gradient(to right, #70FFD2, #FFFF27);
+    -webkit-background-clip: text; /* Necessário para compatibilidade com Chrome/Safari */
+    background-clip: text;
+    color: transparent; 
   }
   
   .stars {
     display: flex;
     justify-content: center;
     gap: 4px;
-    margin-bottom: 10px;
+    padding-bottom: .5rem;
   }
   
   .stars img {
@@ -512,27 +597,36 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     height: 20px;
   }
   
-  .header-card-banner-price h3 {
-    margin: 6px 0;
+  .header-card-banner-price p {
+    font-size: 1.7rem;
+    padding: 0rem 0;
+    margin: 0;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  .header-card-banner-price h3{
+    padding: .5rem 0;
     font-weight: 600;
     color: #fff;
   }
   
   .span-price {
     text-decoration: line-through;
-    color: #5a1d00;
+    color: #B25300;
+    font-weight: 700;
   }
   
   .span-price2 {
-    color: #b2ff00;
+    color: #B2FF00;
     font-weight: 700;
+    padding: 0;
   }
   
   .price-show {
     font-size: 2.6rem !important;
     color: #fff;
     font-weight: 800;
-    margin: 10px 0;
   }
   
   /* ===== Lista de informações ===== */
@@ -540,8 +634,8 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
-    margin-top: 30px;
+    gap: 1rem;
+    margin-top: 1rem;
     text-align: left;
   }
   
@@ -549,72 +643,101 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 0.95rem;
-    color: #ffffff;
+    padding: 0 1.5rem;
+  }
+
+  .information-course h3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #002E32;
+    font-weight: 800;
+    font-size: 1.1rem;
   }
   
   .information-course img {
-    width: 22px;
+    width: 32px;
     height: auto;
   }
   
-  .special-information {
-    color: #00aab8;
-    font-weight: 600;
+  h3.special-information {
+    background-image: linear-gradient(to right, #00F3FF, #FF8000 43%);
+    -webkit-background-clip: text; /* Necessário para compatibilidade com Chrome/Safari */
+    background-clip: text;
+    color: transparent; 
+    font-weight: 800;
   }
   
   /* ===== Botão Comprar ===== */
   .button-buy {
-    align-self: center;
-    margin-top: 30px;
-    background: #000;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: #fff;
-    font-weight: 700;
-    border: 2px solid #ff9100;
-    border-radius: 10px;
-    padding: 12px 50px;
+    background: linear-gradient(to right, #FF8000 20%, #FFCB17) padding-box,
+                linear-gradient(to right, #FFFFFF 50%, #FF8000 50%) border-box;
+    border: 5px solid transparent !important;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 0 0 0 35%;
     cursor: pointer;
-    font-size: 1.1rem;
     transition: all 0.2s ease;
+    overflow: hidden;
+    filter: drop-shadow(1px 1px 20px #AD9648);
   }
-  
   .button-buy:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 145, 0, 0.7);
+    transform: scale(1.1);
+    filter: drop-shadow(1px 1px 20px #ffa228);
+  }
+
+  .button-buy ion-icon{
+    font-size: 2.5rem;
+    color: #FF8000;
+    background-color: #ffffff;
+    height: 100%;
+    padding-inline: 1rem;
+  }
+  .button-buy:hover ion-icon {
+    color: #ffffff;
+    background-color: #FF8000;
   }
   
   .promo-content {
     max-width: 480px;
     display: flex;
     flex-direction: column;
-    height: 515px;
+    height: 650px;
     text-align: left;
     justify-content: space-between;
   }
   
-  .promo-text{
+  .promo-text {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2rem;
   }
 
   .emphasis-text h1 {
-    font-size: 2.8rem;
+    font-size: 5rem;
     font-weight: 900;
     color: #fff;
     line-height: 1.1;
   }
   
   .emphasis-text h4 {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     font-weight: 800;
     color: #FF7700;
-    margin-top: 5px;
   }
   
   .promo-content p {
     color: #dcdcdc;
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.6;
   }
   
@@ -632,19 +755,19 @@ Essas são as cores que serão usadas, a visualização delas está no arquivo G
   }
   
   .detail-security img {
-    width: 30px;
+    width: 55px;
     height: auto;
   }
   
   .detail-security h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: #ccc;
     line-height: 1.2;
   }
   
   .detail-security-bold {
-    font-weight: 800;
+    font-weight: 600;
     color: #fff;
   }
   
