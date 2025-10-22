@@ -14,6 +14,22 @@
 </head>
 
 <body>
+    <svg width="0" height="0" style="position: absolute; pointer-events: none; opacity: 0;">
+        <defs>
+            <clipPath id="responsiveBannerShape" clipPathUnits="objectBoundingBox">
+                <path d="
+                    M 0 0
+                    A 0.075 0.0625 0 0 1 0.075 0
+                    L 0 0
+                    A 0.075 0.0625 0 0 1 1 0.0625
+                    L 1 0.8333
+                    C 1 1, 1 1, 1 1
+                    C 0.1 0.3, 0.5 1, 0 1 
+                    Z"
+                />
+            </clipPath>
+        </defs>
+    </svg>
     <main>
         <section id="first-screen">
             <img class="logo-main" src="Assets/img/Logo.svg" alt="logomarca método avatar midia">
@@ -103,41 +119,41 @@
         </section>
         <section id="fourth-screen">
            <div class="title-content-fourth-screen">
-            <h1>Quais as possibilidades?</h1>
+            <h3>Quais as possibilidades?</h3>
            </div>
            <div class="cards-possibilities">
                 <div class="card-possibility">
                     <img class="card-possibility-image" src="Assets/img/cardsPossibilitiesImg/icon-conteudo.svg" alt="Ícone de conteúdo">
-                    <h3 class="card-possibility-title">
+                    <h4 class="card-possibility-title">
                         Criar conteúdo contínuo e magnético
-                    </h3>
+                    </h4>
                     <p class="card-possibility-text">
                         Nunca mais sofra com o bloqueio criativo. Seus avatares serão uma fonte inesgotável de ideias
                     </p>
                 </div>
                 <div class="card-possibility">
                     <img class="card-possibility-image" src="Assets/img/cardsPossibilitiesImg/iconMoney.svg" alt="Ícone de conteúdo">
-                    <h3 class="card-possibility-title">
+                    <h4 class="card-possibility-title">
                         Construir uma nova fonte de renda
-                    </h3>
+                    </h4>
                     <p class="card-possibility-text">
                         Construa uma fonte de renda escalável, faturando alto com um mercado em expansão
                     </p>
                 </div>
                 <div class="card-possibility">
                     <img class="card-possibility-image" src="Assets/img/cardsPossibilitiesImg/iconApp.svg" alt="Ícone de conteúdo">
-                    <h3 class="card-possibility-title">
+                    <h4 class="card-possibility-title">
                         Dominar a tecnologia do futuro
-                    </h3>
+                    </h4>
                     <p class="card-possibility-text">
                         Saia na frente e utilize a mesma tecnologia de animação das grandes marcas
                     </p>
                 </div>
                 <div class="card-possibility">
                     <img class="card-possibility-image" src="Assets/img/cardsPossibilitiesImg/iconHome.png" alt="Ícone de conteúdo">
-                    <h3 class="card-possibility-title">
+                    <h4 class="card-possibility-title">
                         Trabalhar de onde quiser
-                    </h3>
+                    </h4>
                     <p class="card-possibility-text">
                         Conquiste a liberdade de ter uma profissão 100% digital, precisando de apenas um computador
                     </p>
@@ -145,7 +161,7 @@
            </div>
            <div class="cta-fourth-view">
                 <div class="left-block-cta-fourth-view">
-                    <h1 class="cta-text-fourth-view"><span class="cta-text-span1">Com nosso treinamento,</span> <span class="cta-text-span2">você que está sem tempo</span> de gravar conteúdo para suas redes sociais, <span class="cta-text-span2">você que não gosta de aparecer</span> para às câmeras ou até mesmo <span class="cta-text-span1">você que está procurando uma nova fonte de renda</span> irá abrir um leque de possibilidades!</h1>
+                    <h3 class="cta-text-fourth-view"><span class="cta-text-span1">Com nosso treinamento,</span> <span class="cta-text-span2">você que está sem tempo</span> de gravar conteúdo para suas redes sociais, <span class="cta-text-span2">você que não gosta de aparecer</span> para às câmeras ou até mesmo <span class="cta-text-span1">você que está procurando uma nova fonte de renda</span> irá abrir um leque de possibilidades!</h3>
                     <a href="#price-screen">
                         <button class="button-cta">
                             <h1>QUERO APRENDER O MÉTODO</h1>
@@ -154,6 +170,7 @@
                 </div>
                 <div class="right-block-cta-fourth-view">
                     <img src="Assets/img/avataresApontando.svg" alt="Avatares apontando">
+                    <div class="backlight"></div>
                 </div>
            </div>
         </section>
@@ -174,9 +191,9 @@
                             <img src="Assets/img/Star.svg" alt="imagem de estrela">
                         </div>
                         <h3>DE <span class="span-price">R$247,90</span></h3>
-                        <h1>POR</h1>
-                        <h1 class="price-show">R$147,90</h1>
-                        <h3>OU <span class="span-price2">8x DE R$18,50*</span></h3>
+                        <p>POR</p>
+                        <h2 class="price-show">R$147,90</h2>
+                        <h4>OU <span class="span-price2">8x DE R$18,50*</span></h4>
                     </div>
                     <div class="informations-course">
                         <div class="information-course">
@@ -189,15 +206,15 @@
                         </div>
                         <div class="information-course">
                             <img src="Assets/img/Circle/undefined/Glyph_ undefined.svg" alt="Ícone confirmação">
-                            <h3 class="special-information">Suporte ao aluno.</h3>
+                            <h3>Suporte ao aluno.</h3>
                         </div>
                         <div class="information-course">
                             <img src="Assets/img/Circle/undefined/Glyph_ undefined.svg" alt="Ícone confirmação">
-                            <h3 class="special-information">Certificado de conclusão.</h3>
+                            <h3>Certificado de conclusão.</h3>
                         </div>
-                        <Button class="button-buy">
+                        <!-- <Button class="button-buy">
                             <h4>ADQUIRIR</h4>
-                        </Button>
+                        </Button> -->
                     </div>
                 </div>
                 <div class="promo-content">
@@ -208,6 +225,10 @@
                         </div>
                         <p>Aproveite nossa oferta agora e <span class="cta-text-span2">adquira o curso levando junto os 3 bônus especiais</span> que preparamos para você!</p>
                     </div>
+                    <button class="button-buy">
+                        <h4>ADQUIRIR</h4>
+                        <ion-icon name="cart"></ion-icon>
+                    </button>
                     <div class="safe-details-course">
                         <div class="detail-security">
                             <img src="Assets/img/securityDetails/pagamentoSeguro.svg" alt="Ícone pagamento seguro">
@@ -566,6 +587,8 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

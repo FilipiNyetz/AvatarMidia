@@ -12,3 +12,8 @@
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
   }
+
+  /* Retirando a estilização do BS nos botões */
+  button > h1 {
+    all: unset;
+  }
