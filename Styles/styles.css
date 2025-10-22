@@ -365,7 +365,7 @@ main {
   }
 
   .third-section-main-content h3 {
-    width: 650px;
+    width: 80%;
     max-width: 90%;
     font-weight: 400;
     line-height: 1.6;
@@ -1400,3 +1400,48 @@ main {
     font-weight: 300;
   }
   
+
+  @media screen and (max-width: 768px){
+    #first-screen h1{
+      font-size: 18px;
+      width: 80%;
+      display: inline-block;
+    }
+    .cta-first-view{
+      margin-top: 20px;
+    }
+    .cta-text p{
+      width: 80%;
+      display: inline-block;
+      margin-left: 8%;
+    }
+    .button-cta{
+      width: 100%;
+      font-size: 18px;
+    }
+
+    /* Segunda tela */
+   .content-presentation h3{
+    width: 80%;
+   }
+
+   /* Terceira tela */
+   .third-section-header{
+    padding: 2rem 4% 0rem 4%;
+   }
+   .third-section-header h1{
+    font-size: 20px;
+   }
+   .third-section-header p{
+    width: 100%;
+    font-size: 16px;
+   }
+   .third-section-main-content{
+    padding: 2rem 0;
+   }
+
+   .third-section-main-text {
+    font-size: 20px;
+    width: 50%;
+   }
+}
