@@ -780,20 +780,11 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 56px;
-    background: radial-gradient(
-        circle at 50% 10%, 
-        rgba(0, 243, 255, 0.15) 0%, 
-        transparent 60%
-      ),
-      linear-gradient(
-        135deg, 
-        #002B2F 0%, 
-        #001414 100%
-      );
+    background: #043C40;
     text-align: center;
-    padding: 20px 0;
-    gap: 56px;
+    padding: 5rem 0;
+    gap: 4rem;
+    overflow: hidden;
   }
 
   
@@ -803,10 +794,12 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    z-index: 1;
   }
+
   
   .title-bonus-screen h1 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 900;
     background: linear-gradient(90deg, #FFC500 0%, #FF0000 100%);
     -webkit-background-clip: text;
@@ -818,14 +811,13 @@ main {
     width: 100%;
     max-width: 560px;
     color: #EDEDED;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
     line-height: 1.5;
   }
   
   .cta-text-span1 {
     color: #FFC500;
-    font-weight: bold;
+    font-weight: 800;
   }
   
   /* ===== CARDS ===== */
@@ -833,8 +825,37 @@ main {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 32px;
+    gap: 2rem;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+  }
+
+  .cards-describe-bonus > .backlight {
+    position: absolute;
+    background-image: linear-gradient(to right, #00F3FF, #FFCB17);
+    border-radius: 100%;
+    filter: blur(80px);
+    z-index: -1;
+  }
+  .cards-describe-bonus > .backlight:nth-child(1) {
+    width: 40%;
+    height: 100%;
+    bottom: -100px;
+    left: -150px;
+  }
+  .cards-describe-bonus > .backlight:nth-child(2) {
+    width: 20%;
+    height: 100%;
+    top: -100px;
+    right: 450px;
+  }
+  .cards-describe-bonus > .backlight:nth-child(3) {
+    width: 40%;
+    height: 100%;
+    bottom: -50px;
+    right: -80px;
+    transform: rotateZ(-20deg);
   }
   
   .card-bonus {
@@ -902,10 +923,11 @@ main {
   .span-price-bonus {
     color: #FFC500;
     text-decoration: line-through;
+    font-weight: 500;
   }
   
   .price-bonus h1 {
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: 700;
   }
   
@@ -921,6 +943,7 @@ main {
     font-weight: 300;
     text-align: center;
     max-width: 700px;
+    z-index: 0;
   }
   
   .cta-text-span5-gradient {
@@ -939,7 +962,7 @@ main {
     justify-content: center;
     background-color: #141414;
     color: #ffffff;
-    padding: 10px 0px;
+    padding: 5rem 0;
     text-align: center;
   }
   
@@ -949,43 +972,38 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 1.3rem;
     margin-bottom: 30px;
-  }
-  
-  .header-modulos-screen h1 {
-    font-size: 28px;
-    font-weight: 800;
   }
   
   .banner {
     width: 100%;
-    height: 40px;
+    padding: 1rem 0;
     background-color: #00f3ff;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #000;
-    border-radius: 4px;
   }
   
   .banner p {
-    font-size: 18px;
     font-weight: 600;
   }
   
   .text-header-modulos-screen {
     max-width: 780px;
-    font-size: 16px;
     line-height: 1.6;
+    font-weight: 600;
+    padding-block: 1rem 2rem;
   }
   
   .cards-modulos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 28px;
-    max-width: 1300px;
+    gap: 2rem;
+    max-width: 1200px;
+    padding-bottom: 2.5rem;
   }
   
   .card-modulo {
@@ -1048,14 +1066,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 2rem;
     text-align: center;
   }
   
   
   .cta-modulos-screnn p {
     max-width: 850px;
-    font-size: 15px;
     line-height: 1.7;
   }
 
@@ -1064,53 +1081,61 @@ main {
     display: flex;
     flex-direction: column;
     color: #000;
+    background-color: #00B4BD;
     overflow: hidden;
   }
   
   /* ------------------- TOPO ------------------- */
   .top-content-certfication-screen {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 35px 8%;
-    background-color: #00b4bd;
-    color: #000;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 0;
+    background-color: #00B4BD;
+    color: #002E32;
   }
   
   .text-content-top-content-certification {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 16px;
+    gap: 1rem;
     width: 50%;
-
   }
   
   .text-content-top-content-certification h1 {
-    font-size: 28px;
     font-weight: 800;
-    margin-bottom: 8px;
+    margin-bottom: .5rem;
     text-align: left;
   }
   
   .text-content-top-content-certification p {
     max-width: 520px;
-    font-size: 18px;
+    font-size: 1.2rem;
     line-height: 1.6;
     text-align: left;
+    font-weight: 500;
+  }
+
+  .highlighted-text-white {
+    color: #FFFFFF;
+    font-weight: 600;
   }
   
   .image-certifcation {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
   }
   
   .image-certifcation img {
-    width: 340px;
+    width: fit-content;
     height: auto;
+    max-height: 320px;
     filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.2));
   }
   
@@ -1122,16 +1147,21 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .container-section-limiting {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
   .main-content-certification-screnn {
     display: flex;
-    width: 80%;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    gap: 40px;
-    padding: 60px 0%;
+    gap: 2.5rem;
+    padding: 4rem 0;
   }
   
   .selo-7-dias {
@@ -1139,12 +1169,12 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 50%;
-
+    width: 100%;
   }
   
   .selo-7-dias img {
-    width: 400px;
+    width: fit-content;
+    max-height: 350px;
     height: auto;
   }
   
@@ -1154,22 +1184,21 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
+    gap: 1.2rem;
   }
   
   .text-content-bottom-content-certification h1 {
-    font-size: 34px;
+    font-size: 2.1rem;
     font-weight: 800;
     text-align: left;
-    color: #000;
+    color: #002E32;
   }
   
   .text-content-bottom-content-certification p {
     max-width: 600px;
-    font-size: 16px;
-    line-height: 1.6;
+    font-weight: 500;
     text-align: left;
-    color: #333;
+    color: #002E32;
   }
   
   /* ------------------- RODAPÉ ------------------- */
