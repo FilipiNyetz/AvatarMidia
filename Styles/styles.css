@@ -367,6 +367,10 @@ main {
   margin-top: .5rem;
 }
 
+.img-avatares-responsiva {
+  display: none;
+}
+
 .third-section-main-content h3 {
   width: 80%;
   max-width: 90%;
@@ -1227,7 +1231,6 @@ h3.special-information {
   color: #002E32;
 }
 
-/* ------------------- RODAPÉ ------------------- */
 .footer-section-certification {
   width: 100%;
   background-color: #fcc404;
@@ -1243,6 +1246,7 @@ h3.special-information {
   font-weight: 700;
 }
 
+/* ------------------- RODAPÉ ------------------- */
 #eight-screen {
   width: 100%;
   background-color: #002b2d;
@@ -1537,13 +1541,9 @@ footer h1 {
     padding: 3rem 0 5rem 0;
   }
 
-  .third-section-main-text {
-    font-size: 1.8rem;
-  }
+  .third-section-main-text {font-size: 1.8rem;}
 
-  .third-section-main-content h3 {
-    font-size: 1.1rem;
-  }
+  .third-section-main-content h3 {font-size: 1.1rem;}
 
   /* 4° TELA */
   .title-content-fourth-screen {margin-bottom: 0;}
@@ -1562,13 +1562,9 @@ footer h1 {
 
   .main-content-price-screen {gap: 2rem;}
 
-  .card-banner-price {
-    scale: 0.9;
-  }
+  .card-banner-price {scale: 0.9;}
 
-  .button-buy {
-    scale: 0.9;
-  }
+  .button-buy {scale: 0.9;}
 
   .promo-content {text-align: center;}
 
@@ -1644,9 +1640,7 @@ footer h1 {
 @media (max-width: 768px) {
 
    /* 1° TELA */
-  .cta-img {
-    max-height: 280px;
-  }
+  .cta-img {max-height: 280px;}
 
   /* 2° TELA */
   .cards-content-presentation {flex-direction: column;}
@@ -1654,14 +1648,10 @@ footer h1 {
   .hero-presentation {width: 70%;}
 
   /* PRICE SCREEN */
-  .card-banner-price {
-    scale: 0.8;
-  }
+  .card-banner-price {scale: 0.8;}
   
   /* BONUS SCREEN */
-  #bonus-screen {
-    gap: 2rem;
-  }
+  #bonus-screen {gap: 2rem;}
 
   .title-bonus-screen h3 {
     width: 90%;
@@ -1715,4 +1705,212 @@ footer h1 {
   .FAQ-button {font-size: .8rem;}
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+  /* 1° TELA */
+  .main-content-first-view h1 {
+    font-size: 1.3rem;
+  }
+
+  .cta-text {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .button-cta {
+    padding: 1rem .5rem;
+    font-size: 1rem;
+  }
+
+  /* 2° TELA */
+  .content-presentation {
+    padding-top: 6rem;
+    gap: 2rem;
+  }
+
+  .cards-content-presentation {
+    gap: 1rem;
+  }
+
+  .hero-presentation {display: none;}
+
+  .card-content {scale: 0.85;}
+
+  .content-presentation > h3 {
+    font-size: 1rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* 3° TELA */
+  .third-section-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .third-section-header p {
+    font-size: .9rem;
+    padding-right: 0;
+  }
+
+  .img-avatares {
+    display: none;
+  }
+
+  .img-avatares-responsiva {
+    display: block;
+    width: 900px;
+    max-width: 90%;
+    height: auto;
+    margin-top: .5rem;
+  }
+
+  .third-section-main-text {
+    font-size: 1.4rem;
+    width: 90%;
+    margin: 0 auto;
+    max-width: none;
+    text-align: left;
+  }
+
+  .third-section-main-content h3 {
+    width: 90%;
+    max-width: none;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+
+  /* 4° TELA */
+
+  #fourth-screen {gap: 2rem;}
+
+  .title-content-fourth-screen {
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .title-content-fourth-screen h3 {font-size: 1rem;}
+
+  .cta-fourth-view {font-size: 1rem;}
+
+  .left-block-cta-fourth-view .button-cta {
+    min-width: 0;
+    font-size: .9rem;
+  }
+
+  /* PRICE SCREEN */
+  #price-screen {padding-bottom: 0;}
+
+  .title-price-screen h1 {font-size: 1.4rem;}
+
+  .title-price-screen p {font-size: .9rem;}
+
+  .main-content-price-screen {gap: 0;}
+
+  .header-card-banner-price {height: 450px;}
+
+  .promo-text {
+    gap: 1rem;
+  }
+
+  .promo-content p .cta-text-span2 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .emphasis-text h1 {font-size: 2.5rem;}
+
+  .emphasis-text h4 {font-size: 1.7rem;}
+  
+  .promo-content {
+    gap: 2rem;
+    justify-content: normal;
+    height: fit-content;
+  }
+
+  .promo-content p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+
+  .button-buy {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0 0 2rem;
+  }
+  
+  .button-buy h4{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .safe-details-course {
+    max-width: 90%;
+    margin-inline: auto;
+    gap: 1rem;
+    margin-top: 0;
+    justify-content: space-between;
+  }
+
+  .detail-security {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  .detail-security img {min-width: 1.5rem;}
+
+  .detail-security h1 {font-size: .5rem;}
+
+  /* BONUS SCREEN */
+  #bonus-screen {gap: 0;}
+
+  .title-bonus-screen h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .title-bonus-screen h3 {font-size: 1rem;}
+
+  .card-bonus {height: 650px;}
+
+  .cta-bonus-screen p {font-size: 1rem;}
+
+  /* 7° TELA */
+  .image-certifcation img {max-height: 250px;}
+
+  .footer-section-certification h1 {font-size: 1rem;}
+
+  .cta-area .button-cta {font-size: 1rem;}
+
+  /* 7° TELA */
+  .selo-7-dias img {max-height: 190px;}
+
+  .text-content-bottom-content-certification h1 {
+    font-size: 1.5rem;
+  }
+
+  /* FAQ SCREEN */
+  .main-faqs {
+    grid-template-columns: 1fr;
+    gap: 20px 60px;
+    max-width: 1100px;
+    width: 90%;
+    justify-items: center;
+  }
+
+  /* RODAPÉ */
+  footer {
+    gap: .5rem;
+  }
+  
+  .social-icons img {width: 35px;}
+
+  footer h1 {
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 500;
+  }
+}

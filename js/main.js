@@ -17,7 +17,7 @@ const swiper = new Swiper(".feedback-swiper", {
         disableOnInteraction: false,
     },
     breakpoints: {
-        320: { slidesPerView: 1 },
+        300: { slidesPerView: 1 },
         768: { slidesPerView: 2 },
         1024: { slidesPerView: 3 },
     },
