@@ -1642,48 +1642,77 @@ footer h1 {
 
 
 @media (max-width: 768px) {
-  /* #first-screen h1{
-      font-size: 18px;
-      width: 80%;
-      display: inline-block;
-    }
-    .cta-first-view{
-      margin-top: 20px;
-    }
-    .cta-text p{
-      width: 80%;
-      display: inline-block;
-      margin-left: 8%;
-    }
-    .button-cta{
-      width: 100%;
-      font-size: 18px;
-    }
 
-    
-   .content-presentation h3{
-    width: 80%;
-   }
+   /* 1° TELA */
+  .cta-img {
+    max-height: 280px;
+  }
 
-   
-   .third-section-header{
-    padding: 2rem 4% 0rem 4%;
-   }
-   .third-section-header h1{
-    font-size: 20px;
-   }
-   .third-section-header p{
-    width: 100%;
-    font-size: 16px;
-   }
-   .third-section-main-content{
-    padding: 2rem 0;
-   }
+  /* 2° TELA */
+  .cards-content-presentation {flex-direction: column;}
 
-   .third-section-main-text {
-    font-size: 20px;
-    width: 50%;
-   } */
+  .hero-presentation {width: 70%;}
+
+  /* PRICE SCREEN */
+  .card-banner-price {
+    scale: 0.8;
+  }
+  
+  /* BONUS SCREEN */
+  #bonus-screen {
+    gap: 2rem;
+  }
+
+  .title-bonus-screen h3 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .cards-describe-bonus {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    gap: 0;
+  }
+
+  .card-bonus {
+    height: 550px;
+    scale: 0.9;
+  }
+
+  /* 6° TELA */
+  .cards-modulos {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* 7° TELA */
+  .top-content-certfication-screen {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .text-content-top-content-certification {width: 100%;}
+
+  .footer-section-certification h1 {font-size: 1.3rem;}
+
+  /* 8° TELA */
+  .feedback-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 60px;
+  }
+
+  .cta-area {
+    margin-block: 2.5rem 0;
+    padding-right: 0;
+    justify-content: center;
+  }
+  
+  .logo-cta {display: none;}
+
+  /* FAQ-screen */
+  .FAQ-button {font-size: .8rem;}
 }
 
 @media (max-width: 576px) {}
