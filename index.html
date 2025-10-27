@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Método Avatar Mídia</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Styles/reset.css">
     <link rel="stylesheet" href="Styles/styles.css">
@@ -109,6 +109,7 @@
             <div class="third-section-main-content">
                 <h1 class="third-section-main-text" >VEJA <span class="cta-text-span1">ALGUMAS DAS CRIAÇÕES</span> QUE O NOSSO MÉTODO POSSIBILITOU</h1>
                 <img class="img-avatares" src="Assets/img/avatares.svg" alt="">
+                <img class="img-avatares-responsiva" src="Assets/img/avatares-responsiva.svg" alt="">
                 <h3>O que está esperando? Venha aprender a criar avatares <span class="cta-text-span1">que te representam</span> e <span class="cta-text-span1">falam pelo seu negócio</span>!</h3>
                 <a href="#price-screen">
                     <button class="button-cta">
@@ -212,9 +213,6 @@
                             <img src="Assets/img/Circle/undefined/Glyph_ undefined.svg" alt="Ícone confirmação">
                             <h3>Certificado de conclusão.</h3>
                         </div>
-                        <!-- <Button class="button-buy">
-                            <h4>ADQUIRIR</h4>
-                        </Button> -->
                     </div>
                 </div>
                 <div class="promo-content">
@@ -225,10 +223,12 @@
                         </div>
                         <p>Aproveite nossa oferta agora e <span class="cta-text-span2">adquira o curso levando junto os 3 bônus especiais</span> que preparamos para você!</p>
                     </div>
-                    <button class="button-buy">
-                        <h4>ADQUIRIR</h4>
-                        <ion-icon name="cart"></ion-icon>
-                    </button>
+                    <a href="https://pay.hotmart.com/B96410843F" target="_blank" style="text-decoration: none;">
+                        <button class="button-buy">
+                            <h4>ADQUIRIR</h4>
+                            <ion-icon name="cart"></ion-icon>
+                        </button>
+                    </a>
                     <div class="safe-details-course">
                         <div class="detail-security">
                             <img src="Assets/img/securityDetails/pagamentoSeguro.svg" alt="Ícone pagamento seguro">
@@ -253,6 +253,9 @@
                 <h3>Confira os bônus preparados para quem adquirir o curso <span class="cta-text-span1">HOJE!</span></h3>
            </div>
            <div class="cards-describe-bonus">
+                <div class="backlight"></div>
+                <div class="backlight"></div>
+                <div class="backlight"></div>
                 <div class="card-bonus">
                     <div class="content-describe-bonus">
                         <h1 class="title-card-bonus">Usando ferramenta que facilitam a vida IA</h1>
@@ -261,7 +264,7 @@
                     </div>
                     <div class="price-bonus">
                         <h3>DE <span class="span-price-bonus">R$59,90</span></h3>
-                        <h1>POR:<span class="cta-text-span2">GRÁTIS</span></h1>
+                        <h1>POR: <span class="cta-text-span2">GRÁTIS</span></h1>
                     </div>
                 </div>
                 <div class="card-bonus">
@@ -272,7 +275,7 @@
                     </div>
                     <div class="price-bonus">
                         <h3>DE <span class="span-price-bonus">R$59,90</span></h3>
-                        <h1>POR:<span class="cta-text-span2">GRÁTIS</span></h1>
+                        <h1>POR: <span class="cta-text-span2">GRÁTIS</span></h1>
                     </div>
                 </div>
                 <div class="card-bonus">
@@ -283,7 +286,7 @@
                     </div>
                     <div class="price-bonus">
                         <h3>DE <span class="span-price-bonus">R$59,90</span></h3>
-                        <h1>POR:<span class="cta-text-span2">GRÁTIS</span></h1>
+                        <h1>POR: <span class="cta-text-span2">GRÁTIS</span></h1>
                     </div>
                 </div>
            </div>
@@ -304,9 +307,8 @@
             </div>
             <div class="cards-modulos">
                 <div class="card-modulo">
-                    <img src="Assets/img/Gemini_Generated_Image_6pn32q6pn32q6pn3 1.svg" alt="">
+                    <img src="Assets/img/Modulos/modulo1.jpeg" alt="">
                     <div class="card-conten">
-                        <h1>Módulo X - Tecnologia e IA</h1>
                         <ul>
                             <li>Lorem ipsum, dolor sit amet</li>
                             <li>Lorem ipsum, dolor sit amet</li>
@@ -317,9 +319,8 @@
                     </div>
                 </div>
                 <div class="card-modulo">
-                    <img src="Assets/img/Gemini_Generated_Image_6pn32q6pn32q6pn3 1.svg" alt="">
+                    <img src="Assets/img/Modulos/Modulo2.jpeg" alt="">
                     <div class="card-conten">
-                        <h1>Módulo X - Tecnologia e IA</h1>
                         <ul>
                             <li>Lorem ipsum, dolor sit amet</li>
                             <li>Lorem ipsum, dolor sit amet</li>
@@ -330,9 +331,8 @@
                     </div>
                 </div>
                 <div class="card-modulo">
-                    <img src="Assets/img/Gemini_Generated_Image_6pn32q6pn32q6pn3 1.svg" alt="">
+                    <img src="Assets/img/Modulos/Modulo3.jpeg" alt="">
                     <div class="card-conten">
-                        <h1>Módulo X - Tecnologia e IA</h1>
                         <ul>
                             <li>Lorem ipsum, dolor sit amet</li>
                             <li>Lorem ipsum, dolor sit amet</li>
@@ -343,9 +343,8 @@
                     </div>
                 </div>
                 <div class="card-modulo">
-                    <img src="Assets/img/Gemini_Generated_Image_6pn32q6pn32q6pn3 1.svg" alt="">
+                    <img src="Assets/img/Modulos/Modulo4.jpeg" alt="">
                     <div class="card-conten">
-                        <h1>Módulo X - Tecnologia e IA</h1>
                         <ul>
                             <li>Lorem ipsum, dolor sit amet</li>
                             <li>Lorem ipsum, dolor sit amet</li>
@@ -356,9 +355,8 @@
                     </div>
                 </div>
                 <div class="card-modulo">
-                    <img src="Assets/img/Gemini_Generated_Image_6pn32q6pn32q6pn3 1.svg" alt="">
+                    <img src="Assets/img/Modulos/Modulo5.jpeg" alt="">
                     <div class="card-conten">
-                        <h1>Módulo X - Tecnologia e IA</h1>
                         <ul>
                             <li>Lorem ipsum, dolor sit amet</li>
                             <li>Lorem ipsum, dolor sit amet</li>
@@ -369,9 +367,8 @@
                     </div>
                 </div>
                 <div class="card-modulo">
-                    <img src="Assets/img/Gemini_Generated_Image_6pn32q6pn32q6pn3 1.svg" alt="">
+                    <img src="Assets/img/Modulos/Modulo6.jpeg" alt="">
                     <div class="card-conten">
-                        <h1>Módulo X - Tecnologia e IA</h1>
                         <ul>
                             <li>Lorem ipsum, dolor sit amet</li>
                             <li>Lorem ipsum, dolor sit amet</li>
@@ -382,9 +379,8 @@
                     </div>
                 </div>
                 <div class="card-modulo">
-                    <img src="Assets/img/Gemini_Generated_Image_6pn32q6pn32q6pn3 1.svg" alt="">
+                    <img src="Assets/img/Modulos/Modulo7.jpeg" alt="">
                     <div class="card-conten">
-                        <h1>Módulo X - Tecnologia e IA</h1>
                         <ul>
                             <li>Lorem ipsum, dolor sit amet</li>
                             <li>Lorem ipsum, dolor sit amet</li>
@@ -395,9 +391,56 @@
                     </div>
                 </div>
                 <div class="card-modulo">
-                    <img src="Assets/img/Gemini_Generated_Image_6pn32q6pn32q6pn3 1.svg" alt="">
+                    <img src="Assets/img/Modulos/Modulo7.jpeg" alt="">
                     <div class="card-conten">
-                        <h1>Módulo X - Tecnologia e IA</h1>
+                        <ul>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-modulo">
+                    <img src="Assets/img/Modulos/Modulo9.jpeg" alt="">
+                    <div class="card-conten">
+                        <ul>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-modulo">
+                    <img src="Assets/img/Modulos/Modulo10.jpeg" alt="">
+                    <div class="card-conten">
+                        <ul>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-modulo">
+                    <img src="Assets/img/Modulos/Modulo11.jpeg" alt="">
+                    <div class="card-conten">
+                        <ul>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                            <li>Lorem ipsum, dolor sit amet</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-modulo">
+                    <img src="Assets/img/Modulos/Modulo12.jpeg" alt="">
+                    <div class="card-conten">
                         <ul>
                             <li>Lorem ipsum, dolor sit amet</li>
                             <li>Lorem ipsum, dolor sit amet</li>
