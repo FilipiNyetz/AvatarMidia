@@ -1729,27 +1729,32 @@ footer h1 {
   .card-banner-price {scale: 0.8;}
   
   /* BONUS SCREEN */
-  #bonus-screen {gap: 2rem;}
+  .card-bonus {
+    height: auto;
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+  }
 
-  .title-bonus-screen h3 {
-    width: 90%;
-    margin: 0 auto;
+  .card-bonus img {
+    height: 120px;
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
+
+  .card-bonus h4,
+  .card-bonus p {
+    margin-bottom: 0.8rem;
   }
 
   .cards-describe-bonus {
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
   }
 
-  .card-bonus {height: 520px;}
-  .card-bonus img {
-    height: 160px;
-    object-fit: contain;
-    margin: 0;
+  #bonus-screen {
+    gap: 1.5rem;
   }
-
   /* 6° TELA */
   .cards-modulos {
     grid-template-columns: 1fr;
@@ -1988,7 +1993,8 @@ footer h1 {
   .detail-security h1 {font-size: .5rem;}
 
   /* BONUS SCREEN */
-  #bonus-screen {gap: 0;}
+  #bonus-screen {gap: 10px;}
+
 
   .title-bonus-screen h1 {
     font-size: 2rem;
