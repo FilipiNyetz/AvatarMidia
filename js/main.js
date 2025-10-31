@@ -43,3 +43,27 @@ function showResponse(element) {
 
     element.classList.toggle("open", isShowed);
 }
+
+document.querySelectorAll('.avatar-frame video').forEach(video => {
+    video.addEventListener('mouseenter', () => {
+      video.currentTime = 0; // opcional: reinicia o vídeo do começo
+      video.play();
+    });
+    video.addEventListener('mouseleave', () => {
+      video.pause();
+    });
+  });
+  
+
+  function toggleModulos() {
+    const container = document.getElementById('cardsModulos');
+    const button = document.querySelector('.btn-toggle');
+    container.classList.toggle('modulo-expanded');
+  
+    if (container.classList.contains('modulo-expanded')) {
+      button.textContent = 'Ver menos';
+    } else {
+      button.textContent = 'Ver mais';
+    }
+  }
+  
