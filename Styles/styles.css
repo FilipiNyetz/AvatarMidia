@@ -469,9 +469,11 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 2;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .card-possibility:hover {
@@ -1725,6 +1727,36 @@ footer h1 {
 
   .display-on-phone{display: none !important;}
 
+  #fourth-screen{
+    padding: 3rem 0;
+    gap: 0;
+  }
+
+  .card-possibility {
+    height: 100px;
+    padding: 0rem;
+    margin: 0.8rem 0;
+  }
+
+  .card-possibility-text {
+    display: none;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.3s ease;
+  }
+
+  .card-possibility.expanded .card-possibility-text {
+    display: block;
+    opacity: 1;
+    max-height: 300px;
+    margin-top: 0.8rem;
+  }
+
+  .card-possibility.expanded {
+    height: 250px;
+    transform: scale(1.02);
+  }
+
   /* PRICE SCREEN */
   .card-banner-price {scale: 0.8;}
   
@@ -1732,7 +1764,7 @@ footer h1 {
   .card-bonus {
     height: auto;
     padding: 1.2rem;
-    margin: 1.5rem 0;
+    margin: -0.3rem 0;
   }
 
   .card-bonus img {
@@ -1883,6 +1915,32 @@ footer h1 {
 
   .display-on-phone{display: none !important;}
 
+  .card-possibility {
+    height: 100px;
+    padding: 0rem;
+    margin: 0.8rem 0;
+  }
+
+  .card-possibility-text {
+    display: none;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.3s ease;
+  }
+
+  .card-possibility.expanded .card-possibility-text {
+    display: block;
+    opacity: 1;
+    max-height: 300px;
+    margin-top: 0.8rem;
+  }
+
+
+  .card-possibility.expanded {
+    height: 250px;
+    transform: scale(1.02);
+  }
+
   .img-avatares-responsiva {
     display: block;
     width: 900px;
@@ -1994,7 +2052,6 @@ footer h1 {
 
   /* BONUS SCREEN */
   #bonus-screen {gap: 10px;}
-
 
   .title-bonus-screen h1 {
     font-size: 2rem;

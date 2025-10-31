@@ -44,6 +44,19 @@ function showResponse(element) {
     element.classList.toggle("open", isShowed);
 }
 
+document.querySelectorAll('.card-possibility').forEach(card => {
+    card.addEventListener('click', () => {
+      // Fecha todos os outros antes de abrir o atual
+      document.querySelectorAll('.card-possibility').forEach(c => {
+        if (c !== card) c.classList.remove('expanded');
+      });
+  
+      // Alterna o card clicado
+      card.classList.toggle('expanded');
+    });
+  });
+  
+
 document.querySelectorAll('.avatar-frame video').forEach(video => {
     video.addEventListener('mouseenter', () => {
       video.currentTime = 0; // opcional: reinicia o vídeo do começo
