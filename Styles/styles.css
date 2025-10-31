@@ -360,6 +360,43 @@ main {
   max-width: 90%;
 }
 
+.avatar-frame {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* centraliza o grid na tela */
+}
+
+
+.avatar-frame img,
+.avatar-frame video {
+  width: 100%;
+  height: 380px;
+  object-fit: fill;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f5f5f5; /* fallback em caso de erro no carregamento */
+}
+
+/* Pequena animação ao passar o mouse */
+.avatar-frame img:hover,
+.avatar-frame video:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Ajuste para vídeos */
+.avatar-frame video {
+  display: block;
+  background-color: #000;
+  border: none;
+}
+
+
 .img-avatares {
   width: 900px;
   max-width: 95%;
@@ -1071,12 +1108,13 @@ h3.special-information {
 }
 
 
-.card-content {
+.card-conten {
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  
 }
 
 .card-modulo h1 {
@@ -1094,6 +1132,25 @@ h3.special-information {
   color: #dcdcdc;
 }
 
+.btn-toggle {
+  width: 50%;
+  height: 60%;
+  padding: 1.0rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: #FCC404;
+  color: rgba(0, 0, 0, 0.80);
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: none;
+}
+
+.btn-toggle:active {
+  transform: scale(0.95);
+}
 
 .cta-modulos-screnn {
   margin-top: 40px;
@@ -1647,6 +1704,27 @@ footer h1 {
 
   .hero-presentation {width: 70%;}
 
+  .avatar-frame{
+    grid-template-columns: repeat(2, 1fr);    
+  }
+
+  .img-avatares {
+    display: none;
+  }
+
+  .avatar-frame img,
+.avatar-frame video {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+  .display-on-phone{display: none !important;}
+
   /* PRICE SCREEN */
   .card-banner-price {scale: 0.8;}
   
@@ -1665,15 +1743,41 @@ footer h1 {
     gap: 0;
   }
 
-  .card-bonus {
-    height: 550px;
-    scale: 0.9;
+  .card-bonus {height: 520px;}
+  .card-bonus img {
+    height: 160px;
+    object-fit: contain;
+    margin: 0;
   }
 
   /* 6° TELA */
   .cards-modulos {
-    width: 90%;
-    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+
+  /* mostra o botão no mobile */
+  .btn-toggle {
+    display: block;
+  }
+
+  /* mostra só os 3 primeiros */
+  .cards-modulos .card-modulo:nth-child(n + 4) {
+    display: none;
+  }
+
+  /* quando expandido, mostra tudo */
+  .cards-modulos.modulo-expanded .card-modulo {
+    display: block;
+  }
+
+  /* muda a seta quando expandido */
+  .cards-modulos.modulo-expanded + .btn-toggle::after {
+    display: block;
+
+  }
+
+  .card-conten{
+    display: none;
   }
 
   /* 7° TELA */
@@ -1727,6 +1831,8 @@ footer h1 {
     gap: 2rem;
   }
 
+  
+
   .cards-content-presentation {
     gap: 1rem;
   }
@@ -1751,9 +1857,26 @@ footer h1 {
     padding-right: 0;
   }
 
+  .avatar-frame{
+    grid-template-columns: repeat(2, 1fr);    
+  }
+
   .img-avatares {
     display: none;
   }
+
+  .avatar-frame img,
+.avatar-frame video {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+  .display-on-phone{display: none !important;}
 
   .img-avatares-responsiva {
     display: block;
@@ -1874,9 +1997,19 @@ footer h1 {
 
   .title-bonus-screen h3 {font-size: 1rem;}
 
-  .card-bonus {height: 650px;}
+  .card-bonus {height: 520px;}
+  .card-bonus img {
+    height: 160px;
+    object-fit: contain;
+    margin: 0;
+  }
 
   .cta-bonus-screen p {font-size: 1rem;}
+
+  /* 6° TELA */
+  .card-conten{
+    display: none;
+  }
 
   /* 7° TELA */
   .image-certifcation img {max-height: 250px;}
