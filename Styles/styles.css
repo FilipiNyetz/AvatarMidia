@@ -735,7 +735,12 @@ h3.special-information {
 }
 
 /* ===== Botão Comprar ===== */
-.button-buy {
+
+.button-buy-mobile{
+  display: none;
+}
+
+#button-buy, #button-buy-mobile {
   width: 100%;
   height: 80px;
   display: flex;
@@ -757,12 +762,12 @@ h3.special-information {
   filter: drop-shadow(1px 1px 20px #AD9648);
 }
 
-.button-buy:hover {
+#button-buy:hover {
   transform: scale(1.1);
   filter: drop-shadow(1px 1px 20px #ffa228);
 }
 
-.button-buy ion-icon {
+#button-buy ion-icon, #button-buy-mobile ion-icon {
   font-size: 2.5rem;
   color: #FF8000;
   background-color: #ffffff;
@@ -770,7 +775,7 @@ h3.special-information {
   padding-inline: 1rem;
 }
 
-.button-buy:hover ion-icon {
+#button-buy:hover ion-icon {
   color: #ffffff;
   background-color: #FF8000;
 }
@@ -945,6 +950,7 @@ h3.special-information {
   justify-content: space-between;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
 .card-bonus:hover {
@@ -978,6 +984,7 @@ h3.special-information {
   line-height: 1.5;
   text-align: justify;
   padding: 0 6px;
+  overflow: hidden;
 }
 
 .price-bonus {
@@ -1623,7 +1630,7 @@ footer h1 {
 
   .card-banner-price {scale: 0.9;}
 
-  .button-buy {scale: 0.9;}
+  #button-buy {scale: 0.9;}
 
   .promo-content {text-align: center;}
 
@@ -1728,8 +1735,13 @@ footer h1 {
   .display-on-phone{display: none !important;}
 
   #fourth-screen{
-    padding: 3rem 0;
+    padding: 1.5rem 0;
     gap: 0;
+  }
+
+  .cards-possibilities{
+    gap: 0rem;
+    margin-bottom: 20px;
   }
 
   .card-possibility {
@@ -1761,27 +1773,29 @@ footer h1 {
   .card-banner-price {scale: 0.8;}
   
   /* BONUS SCREEN */
-  .card-bonus {
-    height: auto;
-    padding: 1.2rem;
-    margin: -0.3rem 0;
-  }
-
-  .card-bonus img {
-    height: 120px;
-    margin: 0 auto 1rem auto;
-    display: block;
-  }
-
-  .card-bonus h4,
-  .card-bonus p {
-    margin-bottom: 0.8rem;
-  }
-
   .cards-describe-bonus {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 24px;
+  }
+
+  .card-bonus {
+    max-width: 90%;
+    min-height: 280px; /* reduzido ainda mais em mobile */
+    padding: 16px;
+  }
+
+  .card-bonus p {
+    margin-top: -20px;
+    font-size: 0.85rem;
+  }
+  .content-describe-bonus img{
+    margin-top: -12px;
+  }
+
+  .title-card-bonus {
+    font-size: 1rem;
   }
 
   #bonus-screen {
@@ -1815,6 +1829,20 @@ footer h1 {
 
   .card-conten{
     display: none;
+  }
+
+  #button-buy{
+    display: none;
+  }
+
+  
+  #button-buy-mobile {
+    padding: 0 0 0 25%;
+}
+
+  .button-buy-mobile{
+    margin-top: -28px;
+    display: inline;
   }
 
   /* 7° TELA */
@@ -1966,7 +1994,7 @@ footer h1 {
 
   /* 4° TELA */
 
-  #fourth-screen {gap: 2rem;}
+  #fourth-screen {gap: 0rem;}
 
   .title-content-fourth-screen {
     padding: 1rem 1rem;
@@ -2020,13 +2048,22 @@ footer h1 {
     font-size: 1rem;
   }
 
-  .button-buy {
+  #button-buy-mobile{
+    padding: 0 0 0 25%;
+  }
+  .button-buy-mobile{
+    margin-top: -28px;
+    display: inline;
+  }
+
+  #button-buy {
+    display: none;
     width: 90%;
     margin: 0 auto;
     padding: 0 0 0 2rem;
   }
   
-  .button-buy h4{
+  #button-buy h4{
     width: 100%;
     text-align: center;
     font-size: 1.2rem;
@@ -2053,18 +2090,26 @@ footer h1 {
   /* BONUS SCREEN */
   #bonus-screen {gap: 10px;}
 
-  .title-bonus-screen h1 {
-    font-size: 2rem;
-    padding-bottom: 1rem;
+  cards-describe-bonus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
 
-  .title-bonus-screen h3 {font-size: 1rem;}
+  .card-bonus {
+    max-width: 90%;
+    min-height: 240px;
+    height: 480px; /* reduzido ainda mais em mobile */
+    padding: 16px;
+  }
 
-  .card-bonus {height: 520px;}
-  .card-bonus img {
-    height: 160px;
-    object-fit: contain;
-    margin: 0;
+  .card-bonus p {
+    font-size: 0.85rem;
+  }
+
+  .title-card-bonus {
+    font-size: 1rem;
   }
 
   .cta-bonus-screen p {font-size: 1rem;}
