@@ -68,15 +68,38 @@ document.querySelectorAll('.avatar-frame video').forEach(video => {
   });
   
 
-  function toggleModulos() {
-    const container = document.getElementById('cardsModulos');
-    const button = document.querySelector('.btn-toggle');
-    container.classList.toggle('modulo-expanded');
-  
-    if (container.classList.contains('modulo-expanded')) {
-      button.textContent = 'Ver menos';
-    } else {
-      button.textContent = 'Ver mais';
-    }
+  let savedScrollPosition = null;
+
+function isMobile() {
+  return window.matchMedia('(max-width: 768px)').matches;
+}
+
+function toggleModulos() {
+  const container = document.getElementById('cardsModulos');
+  const button = document.querySelector('.btn-toggle');
+  const section = document.getElementById('sixth-screen');
+
+  // 🚨 Se algum elemento não existir, sai da função
+  if (!container || !button || !section) {
+    console.warn('Algum elemento não foi encontrado: verifique os IDs no HTML.');
+    return;
   }
+
+  const expanding = !container.classList.contains('modulo-expanded');
+
+  if (expanding) {
+    savedScrollPosition = section.getBoundingClientRect().top + window.scrollY;
+    container.classList.add('modulo-expanded');
+    button.textContent = 'Ver menos';
+  } else {
+    container.classList.remove('modulo-expanded');
+    button.textContent = 'Ver mais';
+
+    const target = savedScrollPosition ?? (section.getBoundingClientRect().top + window.scrollY);
+    setTimeout(() => {
+      window.scrollTo({ top: target, behavior: 'smooth' });
+    }, 50);
+  }
+}
+
   

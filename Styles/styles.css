@@ -1084,6 +1084,7 @@ h3.special-information {
   gap: 2rem;
   max-width: 1200px;
   padding-bottom: 2.5rem;
+  overflow: hidden;
 }
 
 .card-modulo {
@@ -1804,27 +1805,23 @@ footer h1 {
   /* 6° TELA */
   .cards-modulos {
     grid-template-columns: 1fr;
+    max-height: 1200px; /* altura que exibe ~3 cards - ajuste conforme seu card height */
   }
 
-  /* mostra o botão no mobile */
-  .btn-toggle {
-    display: block;
+  .cards-modulos.modulo-expanded {
+    max-height: 6000px; /* altura ampla para exibir todos os cards */
   }
 
-  /* mostra só os 3 primeiros */
+  /* Esconde os cards além do 3o quando não expandido */
   .cards-modulos .card-modulo:nth-child(n + 4) {
     display: none;
   }
-
-  /* quando expandido, mostra tudo */
   .cards-modulos.modulo-expanded .card-modulo {
     display: block;
   }
 
-  /* muda a seta quando expandido */
-  .cards-modulos.modulo-expanded + .btn-toggle::after {
+  .btn-toggle {
     display: block;
-
   }
 
   .card-conten{
