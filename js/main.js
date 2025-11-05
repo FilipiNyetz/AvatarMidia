@@ -57,15 +57,25 @@ document.querySelectorAll('.card-possibility').forEach(card => {
   });
   
 
-document.querySelectorAll('.avatar-frame video').forEach(video => {
-    video.addEventListener('mouseenter', () => {
-      video.currentTime = 0; // opcional: reinicia o vídeo do começo
-      video.play();
-    });
-    video.addEventListener('mouseleave', () => {
-      video.pause();
-    });
+  document.querySelectorAll('.avatar-frame video').forEach(video => {
+    // Detecta se está em dispositivo móvel
+    const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+  
+    if (isMobile) {
+      // Mostra controles e não aplica eventos de hover
+      video.setAttribute('controls', true);
+    } else {
+      // Efeito de hover só no desktop
+      video.addEventListener('mouseenter', () => {
+        video.currentTime = 0;
+        video.play();
+      });
+      video.addEventListener('mouseleave', () => {
+        video.pause();
+      });
+    }
   });
+  
   
 
   let savedScrollPosition = null;
