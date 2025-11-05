@@ -1710,6 +1710,10 @@ footer h1 {
 
 
 @media (max-width: 768px) {
+    #first-screen{
+    border-radius: 0px;
+  }
+
 
    /* 1° TELA */
   .cta-img {max-height: 280px;}
@@ -1882,6 +1886,10 @@ footer h1 {
 }
 
 @media (max-width: 576px) {
+  #first-screen{
+    border-radius: 0px;
+  }
+
   /* 1° TELA */
   .main-content-first-view h1 {
     font-size: 1.3rem;
