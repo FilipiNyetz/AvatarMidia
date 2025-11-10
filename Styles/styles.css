@@ -1343,6 +1343,7 @@ h3.special-information {
   font-size: 40px;
   font-weight: 800;
   margin-bottom: 60px;
+  padding: 10px;
 }
 
 .feedback-card {
@@ -1709,6 +1710,10 @@ footer h1 {
 
 
 @media (max-width: 768px) {
+    #first-screen{
+    border-radius: 0px;
+  }
+
 
   #first-screen{
     border-radius: 0px;
@@ -1869,6 +1874,7 @@ footer h1 {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 60px;
+    padding:10px;
   }
 
   .cta-area {
