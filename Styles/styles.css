@@ -741,7 +741,7 @@ h3.special-information {
 /* ===== Botão Comprar ===== */
 
 .button-buy-mobile{
-  display: none;
+  display: none !important;
 }
 
 #button-buy, #button-buy-mobile {
@@ -1846,17 +1846,18 @@ footer h1 {
   }
 
   #button-buy{
-    display: none;
+    display: none !important;
   }
 
   
   #button-buy-mobile {
     padding: 0 0 0 25%;
+    display: flex !important;
 }
 
   .button-buy-mobile{
     margin-top: -28px;
-    display: inline;
+    display: inline !important;
   }
 
   /* 7° TELA */
