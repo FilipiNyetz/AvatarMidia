@@ -123,7 +123,7 @@
                         class="display-on-phone">
                     <img src="Assets/img/QuadroAvatares/MASCOTE 01.png" alt="avatar-leao" class="display-on-phone">
                     <img src="Assets/img/QuadroAvatares/img2.jpg" alt="avatar-abelha">
-                    <img src="Assets/img/QuadroAvatares/Mascote02.jpeg alt=" avatar-Heroina">
+                    <img src="Assets/img/QuadroAvatares/Mascote02.jpeg " alt="avatar-Heroina">
                     <video src="Assets/img/QuadroAvatares/img3.mp4" class="display-on-phone" loop></video>
                     <video src="Assets/img/QuadroAvatares/video2.mp4" loop></video>
                     <video src="Assets/img/QuadroAvatares/img4.mp4" class="display-on-phone" loop></video>
@@ -244,12 +244,10 @@
                     </div>
                 </div>
                 <div class="promo-content">
-                    <a href="https://pay.hotmart.com/B96410843F" target="_blank" style="text-decoration: none;"
-                        class="button-buy-mobile">
-                        <button id="button-buy-mobile">
+                    <a class="hotmart-fb hotmart__button-checkout button-buy-mobile"
+                        href="https://pay.hotmart.com/B96410843F?checkoutMode=2" id="button-buy-mobile"> 
                             <h4>ADQUIRIR</h4>
                             <ion-icon name="cart"></ion-icon>
-                        </button>
                     </a>
                     <div class="promo-text">
                         <div class="emphasis-text">
@@ -259,11 +257,10 @@
                         <p>Aproveite nossa oferta agora e <span class="cta-text-span2">adquira o curso levando junto os
                                 3 bônus especiais</span> que preparamos para você!</p>
                     </div>
-                    <a href="https://pay.hotmart.com/B96410843F" target="_blank" style="text-decoration: none;">
-                        <button id="button-buy">
+                    <a class="hotmart-fb hotmart__button-checkout"
+                        href="https://pay.hotmart.com/B96410843F?checkoutMode=2" class="button-buy" id="button-buy"> 
                             <h4>ADQUIRIR</h4>
                             <ion-icon name="cart"></ion-icon>
-                        </button>
                     </a>
                     <div class="safe-details-course">
                         <div class="detail-security">
@@ -698,6 +695,28 @@
     <script src="js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript">
+        function importHotmart() {
+            var imported = document.createElement('script');
+            imported.src = 'https://static.hotmart.com/checkout/widget.min.js';
+            document.head.appendChild(imported);
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css';
+            document.head.appendChild(link);
+        }
+        importHotmart(); 
+    </script>
+    <script>
+        document.getElementById('button-buy-mobile').addEventListener('click', function () {
+            HotmartCheckout.init({
+                checkoutUrl: "https://pay.hotmart.com/B96410843F?checkoutMode=2"
+            });
+        });
+    </script>
+
+    
 </body>
 
 </html>
